@@ -1,0 +1,301 @@
+Anest Beginning Ontology, take 2
+
+Scott List
+ (1) laryngoscope handle, (2) laryngoscope blade, (3) both laryngoscope handle and blade, (4) face mask, (5) syringe wrapped, (6) syringe unwrapped.
+
+Laryngoscope
+	Function
+		Visualize larynx
+		Enable intubation
+		Opens airway
+		Conduit for gas exchange
+	Disposition
+		Flashlight
+		Facilitate esophogeal tube placement
+		Facilitate TEE probe
+
+ Laryngoscope Handle
+ 	Functions
+ 		Enables laryngoscopy
+ 		Enables intubation
+ 		Opens airway
+ 		Connects to laryngoscope blade
+ 		Connects to batteries
+ 			Contains batteries
+ 		Illuminate Larynx
+ 		Connect to Lightsource
+ 			Holds lamp
+ 			Powers lamp
+ 		Allow manipulation of blade with hand
+ 	Dispositions
+ 		Flashlight
+		Facilitate esophogeal tube
+		Facilitate TEE probe
+ 		
+ 	Properties (Types?)
+	 	Length
+	 		Short
+	 		Standard
+	 		Long
+	 	Width
+	 		Standard
+	 		Narrow
+	 	Blade Angle
+	 		90
+	 		Other
+	 	Material
+	 		Stainless Steel
+	 		Plastic
+	 	Disposability
+
+
+
+Laryngoscope Blade
+	Functions
+		Enables laryngoscopy
+		Enables intubation 
+		Opens airway
+		Connects to laryngoscope handle
+		Elevates mandible
+		Displaces tongue
+		Displaces epiglottis
+		Visualize glottis
+		Illuminates larynx
+		Positions camera tip (sometimes)
+		Conduit for oxygen (sometimes)
+	Dispositions
+		Flashlight (with handle)
+		Facilitate esophogeal tube placement
+		Facilitate TEE probe
+	Types
+		Macintosh
+			Function
+				Utility for tongue displacement
+				Tip placed in valleculum
+				Used with novices
+		Miller
+			Function
+				Utility for small mouth opening
+				Utility for 'floppy' epiglottis
+				Utility for anteriorly-displaced glottis
+				Tip placed over epiglottis
+				Use limited to experienced individuals
+		Wisconsin
+			Function
+				Similar to Miller in structure
+				Expanded use in pediatrics
+
+Video Laryngoscopes
+	Function
+		Aid in intubation of patients with difficult airways
+		Expanded examination of larynx
+		Permit indirect laryngoscopy
+	Disposition
+		Remote supervision of laryngoscopist during training
+	Properties
+		Camera
+		Fiberoptic Lightsource
+		Video Screen
+	Types
+		C-MAC
+			Function
+				Facilitates very difficult intubation with anticipated unexpected findings
+			Properties
+				Multiple blade types and sizes available
+				Availability of D-Blade
+				Lower profile and aperture
+				Easily switches to FOB module
+		Glidescope
+			Function
+				Facilitates difficult intubations in patients with redundant tissue
+			Properties
+				Disposable covers
+				Multiple blade sizes
+				Bulky design (facilitates displacement of redundant tissue)
+
+
+
+Anesthesia Facemask
+	Functions
+		Conducts O2
+		Conducts inhalational anesthetic agents
+		Conducts CO2
+		Enables positive pressure ventilation
+		Enables noninvasive ventilation
+		Enables CPAP
+		Enables PEEP
+		Enables anesthetic gas analysis
+		Opens airway
+		Connects to anesthesia circuit
+		Connects to fiberoptic diaphragm (sometimes)
+		Connects to syringe (sometimes)
+		Facilitates facemask induction (sometimes, usually pediatrics)
+	Dispositions
+		Nasal CPAP
+		Nasal PEEP
+	Properties
+		MaskShape
+		MaskSize
+		Transparency
+		Supplemental_Port
+		Seal
+			SealMaterial
+			Inflatable
+		Connector
+			InnerDiameter
+			OuterDiameter
+			StrapHooks
+		Scented
+		Pacifier
+	Types
+		Pediatric
+		Neonatal
+
+Syringe
+	Functions
+		Deliver medication_function
+		Draw medication from dispensing system_function
+		Measure medication dose_function
+		Connect to delivery system_function
+		Collect body fluid sample_function
+	Dispositions
+		Handle for IV placement_disposition
+		Identify epidural/paravertebral/tracheal space_disposition
+		Suction_disposition
+		Flushing tubing systems_disposition		
+	Types
+		Medication
+		Insulin
+		Oral
+		Toomey
+		Loss of Resistance
+		Autoinjector
+		Prefilled
+	Properties
+		Volume
+		Material
+		Connection
+			Luer Tip
+			Luer Lock
+			Catheter
+			Toomey
+			Eccentric
+		Container
+			Shell
+			Wrapped
+			Open
+		Sterility
+
+Oral Airway
+	Function
+		Displaces tongue_function
+		Opens airway_function
+		Improves mask ventilation_function
+	Disposition
+		Guides videolaryngoscope_function
+		Prevents ETT occlusion from biting_disposition
+	Properties
+		Size
+		Color
+		Shape
+		Channel
+		Rigidity
+	Types
+		Guedel
+			Function
+				Utility for improved gas conduit via enclosed channel
+		Berman
+			Function
+				Utility for small mouth opening
+		OVASSAPIAN
+			Function
+				Utility for fiberoptic intubation 
+				Utility for ETT mount
+		Williams
+			Function
+				Utility for fiberoptic intubation
+			
+Bite Block
+	Function
+		Prevent ETT occlusion from biting_function
+		Prevent tongue injury_function
+		Prevent TEE damage
+		Prevent endoscope damage
+		Prevent dental trauma
+	Disposition
+		Maintain airway patency_disposition
+	Properties
+		Material
+		Size
+		Rigidity
+		Placement
+		Method for securing
+	Types
+		Dental
+			Function
+				Covers teeth
+		Soft
+			Function
+				Utility for customization
+				Utility for economy
+		Endoscope
+			Function
+				Utility for guiding endoscope, TEE probe
+				Utility for securing around back of neck
+
+Endotracheal Tube
+	Function
+		Conduit for gas transmission_function
+		Secures airway_function
+		Prevents aspiration_function
+		Permits high airway pressures_function
+		Permits positive pressure ventilation_function
+	Disposition
+		Conduit for esophogeal contents_disposition
+		Deliver Medication_disposition
+	Properties
+		Size
+			Inner Diameter
+			Outer Diameter
+		Material
+		Cuff
+		LumenCount
+		Length
+		Shape
+		Rigidity
+		Eye
+		Beak
+	Types
+		Standard
+			Function
+				Utility for customization
+		RAE
+			Function
+				Places ETT out of surgical field
+			Properties
+				Nasal vs. Oral shape
+				Preformed s-shape
+		Nasal
+			Function
+				Extended length needed for nasal placement
+		Parker
+			Function
+				Facilitates ETT placement difficult intubation
+				Avoids hang-up and bending
+			Properties
+				Rigid structure
+				Beaked tip
+		Double Lumen
+			Function
+				Isolates lungs
+			Properties
+				Right versus Left sided
+				Sizes measured in Fr
+
+
+##Suffixes to use:
+Function: xyz_function
+
+Disposition: xyz_disposition
+
+
