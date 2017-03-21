@@ -1,0 +1,1943 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aneo/"
+     xml:base="http://purl.obolibrary.org/obo/aneo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aneo/">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <rdfs:comment xml:lang="en">An ontology of anestheseology equipment</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">has part</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this year has part this day (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)
+
+A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
+        <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
+        <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000111 xml:lang="en">realizes</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this disease course realizes this disease</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
+        <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">is about</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
+
+We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+
+Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">has_specified_input</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &apos;has participant&apos; works.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Larry Hunter</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Coutot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">is_specified_input_of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">has_specified_output</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Larry Hunter</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">achieves_planned_objective</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell sorting process achieves the objective specification &apos;material separation objective&apos;</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BP, AR, PPPB branch</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PPPB branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modified according to email thread from 1/23/09 in accordince with DT and PPPB branch</obo:IAO_0000232>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">achieves_planned_objective</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000833 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective_achieved_by</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation obtains between a a objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000117>OBI</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective_achieved_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this fragility inheres in this vase</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this red color inheres in this apple</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A dependent inheres in its bearer at all times for which the dependent exists.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label xml:lang="en">inheres in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label xml:lang="en">bearer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000111 xml:lang="en">participates in</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this blood clot participates in this blood coagulation</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this input material (or this output material) participates in this process</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this blood coagulation has participant this blood clot</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this investigation has participant this investigator</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this process has participant this input material (or this output material)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000111 xml:lang="en">is concretized as</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">is concretized as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000111 xml:lang="en">concretizes</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">concretizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000081">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+        <obo:IAO_0000111 xml:lang="en">role of</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this investigator role is a role of this person</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">is role of</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">role_of</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">role of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000085 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000085">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">has function</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_function</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">has function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000111 xml:lang="en">has role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this person has role this investigator role (more colloquially: this person has this role of investigator)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">has_role</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000111 xml:lang="en">objective specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: original definition when imported from OBI read: &quot;objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.&quot;</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: In the example of usage (&quot;In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction&quot;) there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Barry Smith</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">objective specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000111 xml:lang="en">action specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Pour the contents of flask 1 into flask 2</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a directive information entity that describes an action the bearer will take</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">action specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">directive information entity</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: Changed label from &quot;information entity about a realizable&quot; after discussions at ICBO</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
+        <rdfs:label xml:lang="en">plan specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
+objectives is a planned process.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">branch derived</obo:IAO_0000119>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">processed material</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Is a material entity that is created or changed during material processing.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">processed material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000111 xml:lang="en">reagent role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Buffer, dye, a catalyst, a solvating agent.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.
+
+May 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (&quot;a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances&quot;).  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.
+</obo:IAO_0000232>
+        <rdfs:comment>(copied from ReO)
+Reagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.
+
+Reagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance will realize only one of these roles in the execution of a given assay or technique. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.
+
+In regard to the statement that reagents are &apos;distinct&apos; from the specified outputs of a technique, note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a &apos;nucleic acid molecule&apos;) that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of &apos;reagent-ness&apos; is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).</rdfs:comment>
+        <rdfs:label xml:lang="en">reagent role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0600010"/>
+        <obo:IAO_0000111 xml:lang="en">material processing</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Philippe Rocca Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000456 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000456">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000111 xml:lang="en">material transformation objective</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The objective to create a mouse infected with LCM virus. The objective to create a defined solution of PBS.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">an objective specifiction that creates an specific output object from input materials.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">artifact  creation objective</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP: OBI PlanAndPlannedProcess Branch</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">material transformation objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">device</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A voltmeter is a measurement device which is intended to perform some measure function.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An autoclave is a device that sterlizes instruments or contaminated waste by applying high temperature and pressure.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of &quot;device&quot;, and are enumerating the types of roles that a reagent can perform.
+
+2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:
+
+(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.
+
+(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.
+
+(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.
+
+In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.  </obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instrument</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI development call 2012-12-17.</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001755 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001755">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000111 xml:lang="en">selection criterion</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">rats should be aged between 6 and 8 weeks and weight between 180-250grams</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity which defines and states a principle of standard by which selection process may take place.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">selection rule</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI discussion summarized under the following tracker item : http://sourceforge.net/p/obi/obi-terms/678/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">selection criterion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001928 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001928">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001755"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">selection</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 24023800.  In this study, a set of eleven genes (VATP16, 60 S, UQCC, SMD3, EF1α, UBQ, SAND, GAPDH, ACT, PsaB, PTB2) was evaluated to identify reference genes during the first hours of interaction (6, 12, 18 and 24 hpi) between two V. vinifera genotypes and P. viticola. Two analyses were used for the selection of reference genes: direct comparison of susceptible, Trincadeira, and resistant, Regent, V. vinifera cultivars at 0 h, 6, 12, 18 and 24 hours post inoculation with P. viticola (genotype effect); and comparison of each genotype with mock inoculated samples during inoculation time-course (biotic stress effect). Three statistical methods were used, GeNorm, NormFinder, and BestKeeper, allowing to identify UBQ, EF1α and GAPDH as the most stable genes for the genotype effect.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process which results in the creation of group of entity from a larger group by the application of predefined criteria.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">this term refers to  a planned process and therefore is distinct from the notion of &apos;natural selection&apos;, a process covering the operation of natural causes by which those individuals of a species that are best adapted to the environment tend to be preserved and to transmit their characters, while those less adapted die out, so that in the course of generations the degree of adaptation to the environment tends progressively to increase. (as defined by Oxford English Dictionary)</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">selection process</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">selection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001928"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001755"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">acquisition</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Downloading a 3D structure from the PDB. Purchasing antibodies from sigma. </obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">the planned process of gaining possession of a continuant </obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/31/2012 - OBI workshop: This process is not implying ownership of the material / information. </obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Following OBI call November 2012,5th:
+addition of a restriction to acquisition class to capture the need of having selection criteria
+Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">This needs to be fleshed out and logical definitions added that will allow to place the children terms automatically under acquisition</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">acquisition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">material acquisition</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Acquiring 50 C57BL/6 mice bred in the animal facility of the institute as a service to investigators. Purchasing 1 mg of peptides synthesized by Mimotopes at 80% purity. Getting a gift of purified CD4+ specific antibodies presented by Stephen Schoenberger at LIAI.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An acquisition in which possession of a material entity is gained.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The assumption is that the object already exists in its current state, e.g, an available mouse strain purchased from the Jackson Lab, this is the differentia from specimen creation</obo:IAO_0000116>
+        <obo:IAO_0000116>This excludes processes that create or change materials, such as material transformations.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Bjoern Peters, Alan Ruttenberg, Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material procurement</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">material acquisition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/AirwayChannel -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/AirwayChannel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Anesthesia_Facemask -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Anesthesia_Facemask">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Beak -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Beak">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Bite_Block -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Bite_Block">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Blade_Angle -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Blade_Angle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Camera -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Camera">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Catheter -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Catheter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Collect_body_fluid_sample_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Collect_body_fluid_sample_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Color -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Color">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Conducts_CO2_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_CO2_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Conducts_O2_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_O2_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Conducts_inhalational_anesthetic_agents_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_inhalational_anesthetic_agents_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Conduit_for_esophogeal_contents -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Conduit_for_esophogeal_contents">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Conduit_for_gas_transmission_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Conduit_for_gas_transmission_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Connect_to_delivery_system_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_delivery_system_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Connection -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Connector -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connector">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Connects_to_anesthesia_circuit_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_anesthesia_circuit_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Connects_to_batteries -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_batteries">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Container -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Container">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Contains_batteries -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Contains_batteries">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Cuff -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Cuff">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Deliver_Medication -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Deliver_Medication">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Deliver_medication_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Deliver_medication_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Displaces_tongue_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Displaces_tongue_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Disposability -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Disposability">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Draw_medication_from_dispensing_system_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Draw_medication_from_dispensing_system_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Eccentric -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Eccentric">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_CPAP_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_CPAP_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_PEEP_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_PEEP_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_anesthetic_gas_analysis_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_anesthetic_gas_analysis_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_intubation -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_intubation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_noninvasive_ventilation_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_noninvasive_ventilation_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_positive_pressure_ventilation_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_positive_pressure_ventilation_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Endotracheal_Tube -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Endotracheal_Tube">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Eye -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Eye">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Facilitate_TEE_probe_placement -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Facilitate_TEE_probe_placement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Facilitate_esophogeal_intubation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Facilitate_esophogeal_intubation -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Facilitate_esophogeal_intubation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Flashlight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Fiberoptic_Lightsource -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Fiberoptic_Lightsource">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Flashlight -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Flashlight">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Flushing_tubing_systems -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Flushing_tubing_systems">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Guides_videolaryngoscope -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Guides_videolaryngoscope">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/HandleLength -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/HandleLength">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/HandleWidth -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/HandleWidth">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Handle_for_IV_placement -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Handle_for_IV_placement">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Holds_lamp -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Holds_lamp">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Improves_mask_ventilation_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Improves_mask_ventilation_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Inflatable -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Inflatable">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Seal"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/aneo/SealMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/InnerDiameter -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/InnerDiameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Inner_Diameter -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Inner_Diameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Size"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/aneo/Outer_Diameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Laryngoscope -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Laryngoscope">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Laryngoscope_Blade -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Laryngoscope_Blade">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Laryngoscope_Handle -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Laryngoscope_Handle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Long -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Long">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/HandleLength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Luer_Lock -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Luer_Lock">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Luer_Tip -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Luer_Tip">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/LumenCount -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/LumenCount">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Maintain_airway_patency -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Maintain_airway_patency">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/MaskShape -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/MaskShape">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/MaskSize -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/MaskSize">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Material -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Material">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Measure_medication_dose_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Measure_medication_dose_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Method_for_securing -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Method_for_securing">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Narrow -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Narrow">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/HandleWidth"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/aneo/Standard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Nasal_CPAP -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Nasal_CPAP">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Nasal_PEEP -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Nasal_PEEP">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Open -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Open">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Opens_airway -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Opens_airway">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Opens_airway_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Opens_airway_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Oral_Airway -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Oral_Airway">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Other -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Other">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Blade_Angle"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/aneo/90"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/OuterDiameter -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/OuterDiameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Outer_Diameter -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Outer_Diameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Pacifier -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Pacifier">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Permits_high_airway_pressures_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Permits_high_airway_pressures_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Permits_positive_pressure_ventilation_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Permits_positive_pressure_ventilation_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/PlacementLocation -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/PlacementLocation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Plastic -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Plastic">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Material"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/aneo/Stainless_Steel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Powers_lamp -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Powers_lamp">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Prevent_ETT_occlusion_from_biting_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_ETT_occlusion_from_biting_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Prevent_TEE_damage_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_TEE_damage_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Prevent_dental_trauma_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_dental_trauma_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Prevent_endoscope_damage_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_endoscope_damage_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Prevent_tongue_injury_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_tongue_injury_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Prevents_ETT_occlusion_from_biting -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Prevents_ETT_occlusion_from_biting">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Prevents_aspiration_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Prevents_aspiration_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Remote_supervision_of_laryngoscopist_during_training -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Remote_supervision_of_laryngoscopist_during_training">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Rigidity -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Rigidity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Scented -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Scented">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Seal -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Seal">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/SealMaterial -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/SealMaterial">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Seal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Secures_airway_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Secures_airway_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Shape -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Shape">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Shell -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Shell">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Short -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Short">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/HandleLength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Size -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Size">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Stainless_Steel -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Stainless_Steel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Standard -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Standard">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/HandleLength"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/HandleWidth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Sterility -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Sterility">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/StrapHooks -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/StrapHooks">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Suction -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Suction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Supplemental_Port -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Supplemental_Port">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Syringe -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Syringe">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Toomey -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Toomey">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Transparency -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Transparency">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Video_Laryngoscope -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Video_Laryngoscope">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Video_Screen -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Video_Screen">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Volume -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Volume">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Wrapped -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Wrapped">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/90 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/90">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Blade_Angle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Connects_to_fiberoptic_diaphragm_(sometimes)_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_fiberoptic_diaphragm_(sometimes)_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Connects_to_syringe_(sometimes)_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_syringe_(sometimes)_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Facilitates_facemask_induction_(sometimes,_usually_pediatrics)_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Facilitates_facemask_induction_(sometimes,_usually_pediatrics)_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aneo/Identify_epidural/paravertebral/tracheal_space -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Identify_epidural/paravertebral/tracheal_space">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conduit_for_esophogeal_contents"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Deliver_Medication"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Flashlight"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Flushing_tubing_systems"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Guides_videolaryngoscope"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Handle_for_IV_placement"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Maintain_airway_patency"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Nasal_CPAP"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Nasal_PEEP"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevents_ETT_occlusion_from_biting"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Remote_supervision_of_laryngoscopist_during_training"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Suction"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Identify_epidural/paravertebral/tracheal_space"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/AirwayChannel"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Beak"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Blade_Angle"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Camera"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Color"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connection"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connector"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Container"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Cuff"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Disposability"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Eye"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Fiberoptic_Lightsource"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/HandleLength"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/HandleWidth"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/LumenCount"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/MaskShape"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/MaskSize"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Material"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Method_for_securing"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/PlacementLocation"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Rigidity"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Scented"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Seal"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Shape"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Size"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Sterility"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Supplemental_Port"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Transparency"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Video_Screen"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Volume"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Collect_body_fluid_sample_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_CO2_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_O2_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_inhalational_anesthetic_agents_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conduit_for_gas_transmission_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_delivery_system_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_anesthesia_circuit_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_batteries"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Contains_batteries"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Deliver_medication_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Displaces_tongue_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Draw_medication_from_dispensing_system_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_CPAP_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_PEEP_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_anesthetic_gas_analysis_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_intubation"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_noninvasive_ventilation_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_positive_pressure_ventilation_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Improves_mask_ventilation_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Measure_medication_dose_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Opens_airway"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Opens_airway_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Permits_high_airway_pressures_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Permits_positive_pressure_ventilation_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_ETT_occlusion_from_biting_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_TEE_damage_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_dental_trauma_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_endoscope_damage_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_tongue_injury_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevents_aspiration_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Secures_airway_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_fiberoptic_diaphragm_(sometimes)_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_syringe_(sometimes)_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Facilitates_facemask_induction_(sometimes,_usually_pediatrics)_function"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Catheter"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Eccentric"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Luer_Lock"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Luer_Tip"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Toomey"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/InnerDiameter"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/OuterDiameter"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Pacifier"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/StrapHooks"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Long"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Short"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Standard"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Open"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Shell"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Wrapped"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
