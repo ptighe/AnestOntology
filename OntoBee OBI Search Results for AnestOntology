@@ -1,0 +1,137 @@
+OntoBee Review
+
+Search: OBI
+
+Devices
+Laryngoscope: Nothing
+(no larynx, laryngoscopy)
+
+Handle: nothing
+
+Blade: nothing
+
+Facemask: nothing
+mask: nothing
+
+Syringe: http://purl.obolibrary.org/obo/OBI_0000422
+has_function some transfer_function
+device
+Uses: injection equivalentClass : ( realizes some material to be added role) and ( realizes some ( function and ( inheres in some syringe)))
+
+Oral airway: nothing
+
+bit block, block: nothing (block has several entries all unrelated to this)
+
+Endotracheal tube: nothing
+tube: none related
+
+
+Function prefixes
+
+Connects: nothing related
+
+Facilitates: nothing
+
+conduct: nothing
+
+deliver: nothing
+
+enable: nothing
+
+illuminate: nothing
+
+permit: nothing
+
+prevent: nothing
+
+guide: nothing
+
+
+Qualities
+
+channel: nothing related
+angle: nothing related
+
+digital camera: http://purl.obolibrary.org/obo/OBI_0001048
+has function some image acquisition function
+image_creation_device
+
+Connection:http://purl.obolibrary.org/obo/OBI_0000388
+Definition: A connection function is a function to couple two or more flow channels so that material or signals can be transported from one set of channels to another.
+function
+
+Connector: nothing related, but device given at http://purl.obolibrary.org/obo/OBI_0000478
+
+Container: http://purl.obolibrary.org/obo/OBI_0000967
+Definition: A device that can be used to restrict the location of material entities over time
+has_function some contain_function
+device
+
+cuff: nothing
+
+disposability: nothing
+
+eye: nothing
+
+lightsource: light emission device, http://purl.obolibrary.org/obo/OBI_0001032
+Definition: A device which has a function to emit light.
+has function some light emission function
+
+lumen: nothing
+
+size: nothing
+
+method: nothing
+
+secure: nothing
+
+placement: nothing
+
+location: http://purl.obolibrary.org/obo/RO_0001015
+Definition: A relation between two independent continuants, the location and the target, in which the target is entirely within the location
+
+rigidity: nothing
+scented: nothing
+
+seal: nothing related
+
+shape: nothing related
+
+size: nothing related
+
+sterility:
+
+supplemental:
+
+port: nothing
+
+transparency: nothing
+
+video: nothing
+
+screen: nothing
+
+volume: http://purl.obolibrary.org/obo/PATO_0000918
+Definition: A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies.
+Thing
++ quality
++ physical object quality
++ morphology
++ size
++ 3-D extent
+- volume
++ increased volume
++ decreased volume
+- specific volume
+- molar volume
+
+
+
+
+
+
+
+
+
+
+
