@@ -844,9 +844,9 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand -->
+    <!-- http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand_function -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand_function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
@@ -943,7 +943,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Conduit_for_esophogeal_contents -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Conduit_for_esophogeal_contents">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -964,9 +964,9 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource -->
+    <!-- http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource_function -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource_function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
@@ -996,9 +996,9 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aneo/Connects_to_batteries -->
+    <!-- http://purl.obolibrary.org/obo/aneo/Connects_to_batteries_function -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_batteries">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_batteries_function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
@@ -1012,9 +1012,9 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aneo/Contains_batteries -->
+    <!-- http://purl.obolibrary.org/obo/aneo/Contains_batteries_function -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Contains_batteries">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Contains_batteries_function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
@@ -1031,7 +1031,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Deliver_Medication -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Deliver_Medication">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1100,17 +1100,17 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aneo/Enables_intubation -->
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_intubation_function -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_intubation">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_intubation_function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy -->
+    <!-- http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy_function -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy_function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
@@ -1151,7 +1151,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Facilitate_TEE_probe_placement -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Facilitate_TEE_probe_placement">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Facilitate_esophogeal_intubation"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1159,7 +1159,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Facilitate_esophogeal_intubation -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Facilitate_esophogeal_intubation">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Flashlight"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1175,7 +1175,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Flashlight -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Flashlight">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1183,7 +1183,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Flushing_tubing_systems -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Flushing_tubing_systems">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1191,7 +1191,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Guides_videolaryngoscope -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Guides_videolaryngoscope">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1215,7 +1215,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Handle_for_IV_placement -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Handle_for_IV_placement">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1223,14 +1223,14 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Holds_lamp -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Holds_lamp">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource_function"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx -->
+    <!-- http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx_function -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx_function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
@@ -1282,6 +1282,12 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Laryngoscope_Blade">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy_function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1329,7 +1335,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Maintain_airway_patency -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Maintain_airway_patency">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1386,7 +1392,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Nasal_CPAP -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Nasal_CPAP">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1394,7 +1400,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Nasal_PEEP -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Nasal_PEEP">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1403,14 +1409,6 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Open">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Container"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/aneo/Opens_airway -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Opens_airway">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
@@ -1500,7 +1498,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Powers_lamp -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Powers_lamp">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource_function"/>
     </owl:Class>
     
 
@@ -1548,7 +1546,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Prevents_ETT_occlusion_from_biting -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Prevents_ETT_occlusion_from_biting">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1564,7 +1562,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Remote_supervision_of_laryngoscopist_during_training -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Remote_supervision_of_laryngoscopist_during_training">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1677,7 +1675,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Suction -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Suction">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1730,6 +1728,14 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/aneo/Visualize_larynx_function -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Visualize_larynx_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/aneo/Volume -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Volume">
@@ -1746,9 +1752,9 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade -->
+    <!-- http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade_function -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade_function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
@@ -1789,7 +1795,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/aneo/Identify_epidural/paravertebral/tracheal_space -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/aneo/Identify_epidural/paravertebral/tracheal_space">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
@@ -1859,31 +1865,30 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Allows_manipulation_of_laryngoscope_blade_with_hand_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Collect_body_fluid_sample_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_CO2_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_O2_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conducts_inhalational_anesthetic_agents_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Conduit_for_gas_transmission_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_delivery_system_function"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connect_to_lightsource_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_anesthesia_circuit_function"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_batteries"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Contains_batteries"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_batteries_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Contains_batteries_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Deliver_medication_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Displaces_tongue_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Draw_medication_from_dispensing_system_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_CPAP_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_PEEP_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_anesthetic_gas_analysis_function"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_intubation"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_intubation_function"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_laryngoscopy_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_noninvasive_ventilation_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Enables_positive_pressure_ventilation_function"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Illuminate_Larynx_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Improves_mask_ventilation_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Measure_medication_dose_function"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Opens_airway"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Opens_airway_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Permits_high_airway_pressures_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Permits_positive_pressure_ventilation_function"/>
@@ -1894,7 +1899,7 @@ Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevent_tongue_injury_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Prevents_aspiration_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Secures_airway_function"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/connects_to_laryngoscope_blade_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_fiberoptic_diaphragm_(sometimes)_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Connects_to_syringe_(sometimes)_function"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/aneo/Facilitates_facemask_induction_(sometimes,_usually_pediatrics)_function"/>
